@@ -1,0 +1,41 @@
+.hoverDiv {
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  opacity: 0;
+ 
+}
+
+.hoverDiv.hover {
+  transform: scaleY(1.1);
+  opacity: 0.65;
+}
+
+@media screen and (max-width: 1019px) {
+  .hoverDiv.hover {
+    transform: scaleY(1);
+    height: 18rem; /* Height for medium screens */
+  }
+}
+
+
+.folder-shape {
+  background-color: #77e7de;
+  position: relative;
+  clip-path: polygon(0 0, 60% 0, 70% 10%, 100% 10%, 100% 100%, 0 100%);
+  border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

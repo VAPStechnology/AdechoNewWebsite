@@ -1,0 +1,14 @@
+.folder-wrapper {
+    display: inline-block; /* To size the wrapper according to its content */
+    padding: 1px; /* The thickness of the border */
+    background-color: #31BBAC; /* The border color */
+    border-radius: 2px; /* Same border-radius as the inner shape */
+    clip-path: polygon(0 0, 60% 0, 70% 10%, 100% 10%, 100% 100%, 0 100%);
+  }
+  
+  .folder-shape {
+    clip-path: polygon(0 0, 60% 0, 70% 10%, 100% 10%, 100% 100%, 0 100%);
+    border-radius: 1rem; /* Same border-radius as the wrapper */
+    width: 100%; /* Ensure the shape fills the wrapper */
+    height: 100%; /* Ensure the shape fills the wrapper */
+  }

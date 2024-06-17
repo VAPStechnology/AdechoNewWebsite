@@ -1,0 +1,42 @@
+//css for ServicesOptions.jsx
+@keyframes slide-down {
+  from {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slide-down 0.4s ease-out;
+
+}
+
+
+//css for MobNavOptions.jsx
+@keyframes slideRight {
+    from {
+      transform: translateX(10rem);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      
+    }
+  }
+  
+  .slide-Right {
+    animation: slideRight 0.4s ease-out;
+  }
+
+
+
+
+
+
+
+  
+  
