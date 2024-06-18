@@ -64,9 +64,11 @@ function MobNavOptions() {
 
       </ul>
      <div className=" mt-[3rem] flex justify-center">
-     <Button
+    <Link to={"/Contact"}>
+    <Button
       item1={"Enquire"}
       ></Button>
+    </Link>
      </div>
      </div>
     </>

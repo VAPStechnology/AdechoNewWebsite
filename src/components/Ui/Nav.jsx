@@ -65,9 +65,11 @@ function Nav() {
                  <div className="hover:text-[#13bbac] mt-2">Contact Us</div>
               </Link>
 
-              <Button
+             <Link to={"/Contact"}>
+             <Button
               item1={"Enquriy"}
               ></Button>
+             </Link>
             </div>
           </div>
 

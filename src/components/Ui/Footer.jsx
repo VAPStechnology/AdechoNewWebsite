@@ -9,6 +9,7 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPinterest } from '@fortawesome/free-brands-svg-icons';
 import { CiLocationArrow1 } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 
 function Footer() {
@@ -24,30 +25,12 @@ function Footer() {
         <div className=" md:flex md:flex-row flex flex-col justify-center items-center md:justify-between">
           <div>
             <HomeLogo
-            StyleLogo={{width:'10rem', height:'6rem'}}
+            StyleLogo={{width:'10rem', height:'8rem'}}
             StyleFont1={{fontSize:'1.9rem'}}
             StyleFont2={{fontSize:'1.5rem'}}
             ></HomeLogo>
           </div>
-          <div>
-             <div className=" lg:text-[1.5rem] text-xl mt-8">Empowering Solution, Enrichig Lives</div>
-             <div className=" flex mt-4 text-black">
-                <input
-                type="text"
-                placeholder="      Your email address"
-                className=" lg:w-[18rem] lg:h-[3rem] md:w-[15rem] md:h-[2.5rem] w-[14rem] h-[2.3rem] rounded-l-xl"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                ></input>
-                <CiLocationArrow1 className="absolute text-xl text-gray-400 md:mt-[0.8rem] mt-[0.5rem]" />
-                <div 
-                className=" lg:w-[8rem] lg:h-[3rem] md:w-[6rem] md:h-[2.5rem]  bg-[#13bbac] rounded-r-xl flex justify-center items-center text-black lg:text-xl md:text-lg "
-                >
-                   Subscribe
-                </div>
-            </div>
-          </div>
+         
         </div>
         {/* 1st part end */}
         <hr className=" mt-10"></hr>
@@ -56,13 +39,13 @@ function Footer() {
             {/* our service */}
              <div>
                    <div className=" lg:text-[1.5rem] md:text-xl text-2xl font-semibold mb-8">Our Services</div>
-                  <div className=" lg:text-[1.20rem] md:text-[0.9rem] text-xl space-y-6">
-                    <div  className="hover:text-[#13bbac]">Web Design & Devlopment</div>
-                    <div  className="hover:text-[#13bbac]">Mobile App Devlopment</div>
-                    <div  className="hover:text-[#13bbac]">SEO & Backlinking</div>
-                    <div  className="hover:text-[#13bbac]">Social Media Marketing</div>
-                    <div  className="hover:text-[#13bbac]">content Marketing</div>
-                    <div  className="hover:text-[#13bbac]">Lead Genration</div>
+                  <div className=" lg:text-[1.20rem] md:text-[0.9rem] text-xl space-y-5">
+                    <div  className="hover:text-[#13bbac]"><Link to={"/WebDesign"}>Web Design & Devlopment</Link></div>
+                    <div  className="hover:text-[#13bbac]"><Link to={"/MobileAppDevelopment"}>Mobile App Devlopment</Link></div>
+                    <div  className="hover:text-[#13bbac]"><Link to={"/SeoBacklinking"}>SEO & Backlinking</Link></div>
+                    <div  className="hover:text-[#13bbac]"><Link to={"/SocailMediaMarketing"}>Social Media Marketing</Link></div>
+                    <div  className="hover:text-[#13bbac]"><Link to={"/ContentMarketing"}>content Marketing</Link></div>
+                    <div  className="hover:text-[#13bbac]"><Link to={"/LeadGenration"}>Lead Genration</Link></div>
                   </div>
              </div>
             
@@ -71,12 +54,16 @@ function Footer() {
              <div className=" lg:text-[1.20rem] md:text-[0.9rem] text-[1.20rem] space-y-6">
                  <div className="lg:text-[1.5rem] md:text-[1.25rem] text-2xl font-semibold mb-8">Recent post</div>
 
-                 <div  className="hover:text-[#13bbac]">The Imperative of Responsive<br /> Web Design in the Dynamic<br /> Landscape of 2023.
+                 <div  className="hover:text-[#13bbac]">
+                  <Link to={"/blog2"}>The Imperative of Responsive<br /> Web Design in the Dynamic<br /> Landscape of 2023.
                   <br/>6 January 2020
+                  </Link>
                 </div>
 
-                <div  className="hover:text-[#13bbac]">The Crucial Significance of<br /> Lead Generation in Business<br /> Success.<br />
+                <div  className="hover:text-[#13bbac]">
+                  <Link to={"/blog2"}>The Crucial Significance of<br /> Lead Generation in Business<br /> Success.<br />
                      6 January 2020
+                  </Link>  
                </div>
 
             </div>
@@ -97,11 +84,10 @@ function Footer() {
         <div className=" lg:text-xl md:text-md text-md mt-2">&copy; 2024 Adecho Technologies.All Rights Reserved.</div>
         <div className="">
             <div className="flex lg:space-x-5 md:space-x-2 lg:text-lg md:text-md text-md space-x-3 mt-3">
-              <div className="hover:text-[#13bbac] mt-2">Home</div>
-              <div className="hover:text-[#13bbac] mt-2">About us</div>
-              <div className="hover:text-[#13bbac] mt-2 relative">Services</div>
-              <div className="hover:text-[#13bbac] mt-2">Blog</div>
-              <div className="hover:text-[#13bbac] mt-2">Contact Us</div>
+              <Link to={"/"}><div className="hover:text-[#13bbac] mt-2">Home</div></Link>
+              <Link to={"/AboutUs"}><div className="hover:text-[#13bbac] mt-2">About us</div></Link>
+              <Link to={"/blog1"}><div className="hover:text-[#13bbac] mt-2">Blog</div></Link>
+              <Link to={"/Contact"}><div className="hover:text-[#13bbac] mt-2">Contact Us</div></Link>
   
             </div>
           </div>

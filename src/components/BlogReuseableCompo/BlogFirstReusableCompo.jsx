@@ -34,22 +34,7 @@ function BlogFirstReusableCompo() {
                  <div className=" text-white lg:text-7xl md:text-5xl text-3xl lg:pt-20  pt-10">Useful Blog's</div>
                  <div className=" text-white lg:text-2xl md:mt-10 mt-5 flex"><FaRegHandPointDown style={iconStyle}  className=" mt-2 mr-2 lg:text-7xl md:text-5xl text-4xl text-[#cab87c] "/>stay Plugged in and keep up with all<br /> news and updates!</div>
                  <hr className=" lg:w-[30rem] w-[20rem] md:mt-10 mt-10 bg-[#31BBAC]"></hr>
-                 <div className=" flex  text-black mt-10">
-                <input
-                type="text"
-                placeholder=""
-                className=" lg:w-[18rem] lg:h-[3rem] md:w-[15rem] md:h-[2.5rem] w-[14rem] h-[2.3rem] rounded-l-xl"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                ></input>
-                
-                <div 
-                className=" lg:w-[8rem] lg:h-[3rem] md:w-[6rem] md:h-[2.5rem]  bg-[#13bbac] rounded-r-xl flex justify-center items-center text-black lg:text-xl md:text-lg "
-                >
-                   Subscribe
-                </div>
-              </div>
+
               </div>
 
               <div className="bg-[#13bbac] w-[0.2rem] h-[23rem]"></div>
