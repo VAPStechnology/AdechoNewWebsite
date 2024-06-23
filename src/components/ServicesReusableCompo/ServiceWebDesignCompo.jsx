@@ -12,7 +12,7 @@ function ServiceWebDesignCompo({item1,item2}) {
   return (
     <>
       <div
-        className=" bg-gray-300 lg:w-[15rem] lg:h-[20rem] md:w-[10rem] md:h-[15rem] w-[13rem] h-[15rem] rounded-xl flex items-center justify-center flex-col opacity-50 hover:opacity-100"
+        className=" bg-gray-300 lg:w-[15rem] lg:h-[20rem] md:w-[10rem] md:h-[15rem] w-[13rem] h-[15rem] mr-2 rounded-xl flex items-center justify-center flex-col opacity-50 hover:opacity-100"
         style={isHover ? clipPathStyleHover:clipPathStyle}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

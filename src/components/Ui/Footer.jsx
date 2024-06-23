@@ -19,7 +19,7 @@ function Footer() {
 
   return (
     <>
-      <div className="bg-[#02021E] md:pl-10 md:pr-10 pl-5 pr-5 font-Poppins text-white md:h-[46rem] h-[99rem]  lg:pt-[6rem]">
+      <div className="bg-[#02021E] md:pl-10 md:pr-10 pl-5 pr-5 font-Poppins text-white md:h-[46rem] h-[99rem]  lg:pt-[6rem] pt-10">
 
         {/* first part */}
         <div className=" md:flex md:flex-row flex flex-col justify-center items-center md:justify-between">
